@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.crm.OpportunitiesModule.CreateOpportunitiesWithContactsAndCampaignTest"/>
+      <class name="com.crm.ContactsTest.CreateContactWithOrganisationAndLeadSourceTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
