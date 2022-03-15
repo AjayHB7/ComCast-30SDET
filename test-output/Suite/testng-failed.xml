@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.crm.GenericLibrary.ListenerImplementionClass"/>
+  </listeners>
+  <test thread-count="2" name="Test with firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.crm.OrganizationTest.CreateOrganizationWithIndustryDropdownAndTypeDropdownTest">
+        <methods>
+          <include name="closeDb"/>
+          <include name="createOrganizationWithIndustryDropdownAndTypeDropdown"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="connectDataBase"/>
+          <include name="login"/>
+          <include name="launchTheBrowser"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTest.CreateOrganizationWithIndustryDropdownAndTypeDropdownTest -->
+    </classes>
+  </test> <!-- Test with firefox(failed) -->
+  <test thread-count="2" name="Test with chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.OrganizationTest.CreateOrganizationWithIndustryDropdownAndTypeDropdownTest">
+        <methods>
+          <include name="closeDb"/>
+          <include name="createOrganizationWithIndustryDropdownAndTypeDropdown"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="connectDataBase"/>
+          <include name="login"/>
+          <include name="launchTheBrowser"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTest.CreateOrganizationWithIndustryDropdownAndTypeDropdownTest -->
+    </classes>
+  </test> <!-- Test with chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
