@@ -41,7 +41,6 @@ public class CreateContactWithOrganisationAndLeadSourceTest extends BaseClass
 		OrganizationsPage op = new OrganizationsPage(driver);
 		op.clickOnCreateOrgBtn();	
 		
-		Assert.fail();
 
 		// Enter all the mandatory fields and click on save
 		CreatingNewOrganizationPage cop = new CreatingNewOrganizationPage(driver);
