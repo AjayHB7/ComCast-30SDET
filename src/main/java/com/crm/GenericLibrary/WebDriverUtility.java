@@ -10,6 +10,7 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -321,12 +322,15 @@ public class WebDriverUtility
 	 * @param screenshotname
 	 * @throws IOException
 	 */
-	public void getScreenShot(WebDriver driver, String screenshotname) throws IOException
+	public String getScreenShot(WebDriver driver, String screenshotname) throws IOException
 	{
+		String path = "./Screenshot/"+screenshotname+".png";
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dst = new File("./Screenshot/"+screenshotname+".png");
-		Files.copy(src, dst);
+		File dst = new File(path);
+		FileUtils.copyFile(src, dst);
+		
+		return dst.getAbsolutePath();
 				
 	}
 

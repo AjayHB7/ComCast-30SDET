@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.GenericLibrary.BaseClass;
@@ -21,7 +22,7 @@ import com.crm.ObjectRepository.OrganizationInfoPage;
 import com.crm.ObjectRepository.OrganizationsPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+@Listeners(com.crm.GenericLibrary.ListenerImplementionClass.class)
 public class CreateContactWithOrganisationAndLeadSourceTest extends BaseClass 
 {
 	@Test(groups="smokeSuite")
@@ -40,7 +41,7 @@ public class CreateContactWithOrganisationAndLeadSourceTest extends BaseClass
 		//click on create organization button
 		OrganizationsPage op = new OrganizationsPage(driver);
 		op.clickOnCreateOrgBtn();	
-		
+		Assert.fail();
 
 		// Enter all the mandatory fields and click on save
 		CreatingNewOrganizationPage cop = new CreatingNewOrganizationPage(driver);

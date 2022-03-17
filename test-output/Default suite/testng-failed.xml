@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.PRACTICE.CheckOnCkBx">
+      <class name="com.crm.ContactsTest.CreateContactWithOrganisationAndLeadSourceTest">
         <methods>
-          <include name="deleteFifthContactInContacts"/>
           <include name="closeDb"/>
           <include name="logout"/>
           <include name="closeBrowser"/>
+          <include name="createContactWithOrganisationAndLeadSource"/>
           <include name="connectDataBase"/>
           <include name="login"/>
           <include name="launchTheBrowser"/>
         </methods>
-      </class> <!-- com.crm.PRACTICE.CheckOnCkBx -->
+      </class> <!-- com.crm.ContactsTest.CreateContactWithOrganisationAndLeadSourceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
