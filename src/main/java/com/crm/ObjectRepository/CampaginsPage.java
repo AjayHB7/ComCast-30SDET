@@ -18,9 +18,11 @@ public class CampaginsPage
 	}
 
 	// Step:3 utilization - provide getters
-	public WebElement getHeaderText() {
+	
+	public WebElement getCreateCompaignsLookUpImg() {
 		return CreateCompaignsLookUpImg;
 	}
+	
 	
 	//Business Library
 	/**
@@ -30,6 +32,8 @@ public class CampaginsPage
 	{
 		CreateCompaignsLookUpImg.click();
 	}
+
+	
 	
 	
 	

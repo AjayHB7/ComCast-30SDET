@@ -29,6 +29,7 @@ public class BaseClass
 	public Javautility jlib = new Javautility();
 	public WebDriverUtility wlib = new WebDriverUtility();
 	public PropertyFileUtility plib = new PropertyFileUtility();
+	
 	public WebDriver driver;
 	public static WebDriver sdriver;
 
