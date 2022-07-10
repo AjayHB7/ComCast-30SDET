@@ -18,7 +18,7 @@ public class CampaginsPage
 	}
 
 	// Step:3 utilization - provide getters
-	
+
 	public WebElement getCreateCompaignsLookUpImg() {
 		return CreateCompaignsLookUpImg;
 	}

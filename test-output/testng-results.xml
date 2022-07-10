@@ -1,95 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[====db connection successful====]]>
-    </line>
-    <line>
-      <![CDATA[====chrome browser====]]>
-    </line>
-    <line>
-      <![CDATA[====browser launch successful===]]>
-    </line>
-    <line>
-      <![CDATA[====login sucessfull====]]>
-    </line>
-    <line>
-      <![CDATA[createContactsTest---testscript execution started]]>
-    </line>
-    <line>
-      <![CDATA[createContactsTest---testscript execution successfull-PASS]]>
-    </line>
-    <line>
-      <![CDATA[====logout sucessfull====]]>
-    </line>
-    <line>
-      <![CDATA[====browser close successfull====]]>
-    </line>
-    <line>
-      <![CDATA[====Database close successfull====]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47188" started-at="2022-05-01T10:34:04Z" finished-at="2022-05-01T10:34:51Z">
+  <suite name="Default suite" duration-ms="25967456" started-at="2022-05-10T15:18:36Z" finished-at="2022-05-10T22:31:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47188" started-at="2022-05-01T10:34:04Z" finished-at="2022-05-01T10:34:51Z">
-      <class name="com.crm.ContactsTest.CreateContactsTest">
-        <test-method status="PASS" signature="connectDataBase()[pri:0, instance:com.crm.ContactsTest.CreateContactsTest@5700d6b1]" name="connectDataBase" is-config="true" duration-ms="37" started-at="2022-05-01T10:34:04Z" finished-at="2022-05-01T10:34:04Z">
+    <test name="Default test" duration-ms="25967456" started-at="2022-05-10T15:18:36Z" finished-at="2022-05-10T22:31:24Z">
+      <class name="com.crm.PRACTICE.SummerDresses">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.crm.PRACTICE.SummerDresses@42e99e4a]" name="test1" duration-ms="25967230" started-at="2022-05-10T15:18:36Z" finished-at="2022-05-10T22:31:24Z">
           <reporter-output>
-            <line>
-              <![CDATA[====db connection successful====]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- connectDataBase -->
-        <test-method status="PASS" signature="launchTheBrowser()[pri:0, instance:com.crm.ContactsTest.CreateContactsTest@5700d6b1]" name="launchTheBrowser" is-config="true" duration-ms="8958" started-at="2022-05-01T10:34:05Z" finished-at="2022-05-01T10:34:14Z">
-          <reporter-output>
-            <line>
-              <![CDATA[====chrome browser====]]>
-            </line>
-            <line>
-              <![CDATA[====browser launch successful===]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- launchTheBrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.crm.ContactsTest.CreateContactsTest@5700d6b1]" name="login" is-config="true" duration-ms="6511" started-at="2022-05-01T10:34:14Z" finished-at="2022-05-01T10:34:20Z">
-          <reporter-output>
-            <line>
-              <![CDATA[====login sucessfull====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="createContactsTest()[pri:0, instance:com.crm.ContactsTest.CreateContactsTest@5700d6b1]" name="createContactsTest" duration-ms="26548" started-at="2022-05-01T10:34:20Z" finished-at="2022-05-01T10:34:47Z">
-          <reporter-output>
-            <line>
-              <![CDATA[createContactsTest---testscript execution started]]>
-            </line>
-            <line>
-              <![CDATA[createContactsTest---testscript execution successfull-PASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- createContactsTest -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.crm.ContactsTest.CreateContactsTest@5700d6b1]" name="logout" is-config="true" duration-ms="3127" started-at="2022-05-01T10:34:47Z" finished-at="2022-05-01T10:34:50Z">
-          <reporter-output>
-            <line>
-              <![CDATA[====logout sucessfull====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.crm.ContactsTest.CreateContactsTest@5700d6b1]" name="closeBrowser" is-config="true" duration-ms="1454" started-at="2022-05-01T10:34:50Z" finished-at="2022-05-01T10:34:51Z">
-          <reporter-output>
-            <line>
-              <![CDATA[====browser close successfull====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="closeDb()[pri:0, instance:com.crm.ContactsTest.CreateContactsTest@5700d6b1]" name="closeDb" is-config="true" duration-ms="0" started-at="2022-05-01T10:34:52Z" finished-at="2022-05-01T10:34:52Z">
-          <reporter-output>
-            <line>
-              <![CDATA[====Database close successfull====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeDb -->
-      </class> <!-- com.crm.ContactsTest.CreateContactsTest -->
+        </test-method> <!-- test1 -->
+      </class> <!-- com.crm.PRACTICE.SummerDresses -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

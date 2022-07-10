@@ -43,7 +43,7 @@ import io.reactivex.rxjava3.functions.Action;
 
 public class CreateContactsTest extends BaseClass
 {
-	@Test
+	@Test()
 	public void  createContactsTest() throws Throwable
 	{	
 		

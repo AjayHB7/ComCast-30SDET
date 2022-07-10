@@ -2,6 +2,7 @@ package com.crm.GenericLibrary;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -10,6 +11,8 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+import com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File;
 
 /**
  * This class contains generic methods to read and write data into excel sheet
@@ -59,6 +62,10 @@ public class ExcelFileUtilty
 		Row ro = st.getRow(rowno);
 		Cell cell = ro.createCell(cellno);
 		cell.setCellValue(value);
+
+		FileOutputStream fout = new FileOutputStream(iPathConstants.ExcelName);
+		wb.write(fout);
+
 	}
 
 	/**
