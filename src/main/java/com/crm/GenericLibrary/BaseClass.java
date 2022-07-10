@@ -2,6 +2,7 @@ package com.crm.GenericLibrary;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -29,6 +30,7 @@ public class BaseClass
 	public Javautility jlib = new Javautility();
 	public WebDriverUtility wlib = new WebDriverUtility();
 	public PropertyFileUtility plib = new PropertyFileUtility();
+
 	public WebDriver driver;
 	public static WebDriver sdriver;
 
@@ -53,6 +55,7 @@ public class BaseClass
 		{
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			ChromeOptions co = new ChromeOptions();
 			Reporter.log("====chrome browser====",true);
 		}else if(BROWSER.equalsIgnoreCase("firefox")){
 			WebDriverManager.firefoxdriver().setup();
@@ -70,7 +73,7 @@ public class BaseClass
 		Reporter.log("====browser launch successful===",true);
 
 	}
-	
+
 	@BeforeMethod(groups={"smokeSuite","regressionSuite"})
 	public void login() throws Throwable
 	{
@@ -81,16 +84,17 @@ public class BaseClass
 		Reporter.log("====login sucessfull====",true);
 
 	}
-	
+
 	@AfterMethod(groups={"smokeSuite","regressionSuite"})
 	public void logout()
 	{
 		HomePage hp = new HomePage(driver);
 		hp.signOutOfApp(driver);
 		Reporter.log("====logout sucessfull====",true);
-		
+
 	}
-	
+
+
 	@AfterClass(groups={"smokeSuite","regressionSuite"})
 	//@AfterTest
 	public void closeBrowser()
@@ -98,13 +102,12 @@ public class BaseClass
 		driver.quit();
 		Reporter.log("====browser close successfull====",true);
 	}
-	
+
 	@AfterSuite(groups={"smokeSuite","regressionSuite"})
 	public void closeDb()
 	{
 		//jdbclib.closeDB();
 		Reporter.log("====Database close successfull====",true);
 	}
-
 
 }

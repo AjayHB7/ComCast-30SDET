@@ -29,6 +29,9 @@ public class CreateOrganizationTest extends BaseClass
 		//step 6 click on save button
 		driver.findElement(By.xpath("//input[@title='Save [Alt+S]']")).click();
 		
+		
+		
+		
 	}
 
 }

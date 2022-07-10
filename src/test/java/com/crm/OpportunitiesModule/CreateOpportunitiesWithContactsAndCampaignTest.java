@@ -91,9 +91,6 @@ public class CreateOpportunitiesWithContactsAndCampaignTest extends BaseClass
 		Assert.assertTrue(vercampaign.contains(CampaignName));
 		Reporter.log(vercampaign+"-->verified",true);
 
-
-
-
 		/**create opportunities **/
 
 		// click on opportunities link

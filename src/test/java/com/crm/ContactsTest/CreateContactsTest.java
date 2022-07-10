@@ -37,12 +37,13 @@ import com.crm.ObjectRepository.HomePage;
 import com.crm.ObjectRepository.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.reactivex.rxjava3.functions.Action;
 
 @Listeners(com.crm.GenericLibrary.ListenerImplementionClass.class)
 
 public class CreateContactsTest extends BaseClass
 {
-	@Test
+	@Test()
 	public void  createContactsTest() throws Throwable
 	{	
 		
